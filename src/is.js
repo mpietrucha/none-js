@@ -1,6 +1,9 @@
-import { None } from '@/value'
-import { is as isInstanceOf } from '@mpietrucha/is-constructor'
+import { None } from '@/none'
+import { isConstructor } from '@mpietrucha/is-constructor'
+import { negate } from 'lodash-es'
 
 export const is = value => {
-    return isInstanceOf(value, None)
+    return isConstructor(value, None)
 }
+
+export const not = negate(is)

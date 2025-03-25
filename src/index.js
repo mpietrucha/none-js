@@ -1,8 +1,2 @@
-import { is } from '@/is'
-import { negate } from 'lodash-es'
-
-export { createNone, None } from '@/value'
-
-export { is }
-
-export const not = negate(is)
+export { is, is as isNone, not, not as notNone } from '@/is'
+export { None, none as createNone, none } from '@/none'

@@ -1,5 +1,5 @@
 export class None {}
 
-export const createNone = () => {
+export const none = () => {
     return new None()
 }
