@@ -1,9 +1,9 @@
 import { None } from '@/none'
+import { useNegate } from '@mpietrucha/function'
 import { isInstanceOf } from '@mpietrucha/is-constructor'
-import { negate } from 'lodash-es'
 
 export const is = value => {
     return isInstanceOf(value, None)
 }
 
-export const not = negate(is)
+export const not = useNegate(is)
